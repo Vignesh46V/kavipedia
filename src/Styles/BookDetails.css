@@ -1,0 +1,200 @@
+.book-details-page {
+  background-color: #f8f6ff;
+  min-height: 100vh;
+  padding: 3rem 8%;
+  font-family: "Poppins", sans-serif;
+}
+
+.book-details-container {
+  display: flex;
+  gap: 3rem;
+  background: #fff;
+  border-radius: 16px;
+  padding: 2.5rem;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+}
+
+/* Left Section */
+.book-image-section {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.book-cover {
+  width: 320px;
+  height: 450px;
+  object-fit: cover;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+}
+
+/* Right Section */
+.book-info-section {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+/* Book Title */
+.details-title {
+  font-size: 2rem;
+  font-weight: 800;
+  color: #220b3e;
+  margin-bottom: 0.5rem;
+  line-height: 1.2;
+}
+
+
+/* Author text */
+.book-author {
+  font-size: 0.9rem;
+  color: #333;
+  margin-top: 0;               /* ✅ remove unnecessary gap */
+  margin-bottom: 1rem;         /* slight spacing before stars */
+}
+
+
+.book-rating {
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+
+.book-rating span {
+  color: #555;
+  font-size: 0.95rem;
+  margin-left: 0.5rem;
+}
+
+/* Price Section */
+.book-price {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-size: 1.3rem;
+}
+
+.current-price {
+  color: black;
+  font-weight: 700;
+  font-size: 1.9rem;
+}
+
+.old-price {
+  text-decoration: line-through;
+  color: #999;
+}
+
+.discount {
+  color: #28a745;
+  font-weight: 600;
+}
+
+/* Actions */
+.book-actions {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.add-cart-btn {
+  background-color: #220b3e;
+  color: white;
+  border: none;
+  padding: 0.8rem 1.6rem;
+  font-size: 1rem;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.add-cart-btn:hover {
+  background-color: #ffb703;
+  color: #220b3e;
+  transform: translateY(-2px);
+}
+
+.share-btn {
+  background: none;
+  border: 1.5px solid #ffb703;
+  color: #ffb703;
+  border-radius: 25px;
+  padding: 0.7rem 1.3rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.share-btn:hover {
+  background-color: #ffb703;
+  color: #220b3e;
+}
+
+/* Description */
+.book-description h3,
+.book-specs h3 {
+  margin-top: 1.5rem;
+  color: #220b3e;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.book-description p {
+  font-size: 1rem;
+  color: #333;
+  line-height: 1.7;
+  text-align: justify; /* ✅ evenly aligns left & right */
+  text-justify: inter-word; /* ✅ improves Tamil and multi-language spacing */
+  margin-top: 0.5rem;
+}
+
+
+/* Specifications */
+.book-specs ul {
+  list-style: none;
+  padding: 0;
+}
+
+.book-specs li {
+  color: #444;
+  margin: 0.4rem 0;
+  font-size: 0.95rem;
+}
+
+/* Responsive */
+/* Responsive */
+@media (max-width: 900px) {
+  .book-details-container {
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+  }
+
+  .book-cover {
+    width: 250px;
+    height: 350px;
+  }
+
+  .details-title {
+    text-align: center;
+    font-size: 1rem;
+  }
+
+  .book-info-section {
+    align-items: center;
+  }
+
+  /* 👇 Fix too much gap between Tamil text lines */
+  .description-section p,
+  .book-description p,
+  .book-details-container p {
+    line-height: 1.4 !important;   /* reduces vertical gap */
+    letter-spacing: 0.3px !important; /* tighten word spacing slightly */
+    word-spacing: 0px !important;  /* optional - remove extra gaps between words */
+  }
+}
+
+

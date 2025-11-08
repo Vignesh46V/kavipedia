@@ -1,0 +1,206 @@
+/* ─── Cart Page Base ───────────────────────────── */
+.cart-page {
+  background-color: #f8f6ff;
+  min-height: 100vh;
+  padding: 3rem 8%;
+  font-family: "Poppins", sans-serif;
+}
+
+.cart-title {
+  font-size: 2rem;
+  color: #220b3e;
+  text-align: center;
+  margin-bottom: 2rem;
+  font-weight: 700;
+}
+
+/* ─── Empty Cart State ─────────────────────────── */
+.empty-cart {
+  text-align: center;
+  color: #666;
+  font-size: 1.2rem;
+  margin-top: 4rem;
+  background-color: #fff;
+  display: inline-block;
+  padding: 1rem 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* ─── Cart List ───────────────────────────────── */
+.cart-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+/* ─── Individual Cart Item ────────────────────── */
+.cart-item {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  background: #fff;
+  padding: 1rem 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.cart-item:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+.cart-item img {
+  width: 90px;
+  height: 120px;
+  border-radius: 10px;
+  object-fit: cover;
+  border: 2px solid #eee;
+}
+
+/* ─── Cart Info ───────────────────────────────── */
+.cart-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0.4rem;
+}
+
+.cart-info h3 {
+  color: #220b3e;
+  font-size: 1.1rem;
+  margin: 0;
+  font-weight: 600;
+}
+
+.cart-info p {
+  margin: 0;
+  color: #555;
+  font-size: 0.95rem;
+}
+
+.cart-info .price {
+  color: black;
+  font-weight: 700;
+  margin-top: 0.3rem;
+}
+
+/* ─── Remove Button ───────────────────────────── */
+.remove-btn {
+  align-self: flex-start;
+  margin-top: 0.6rem;
+  background: none;
+  color: #d90429;
+  border: 1px solid #d90429;
+  border-radius: 6px;
+  padding: 0.3rem 0.8rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.remove-btn:hover {
+  background-color: #d90429;
+  color: white;
+}
+
+/* ─── Summary Section ─────────────────────────── */
+.cart-summary {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #fff;
+  border-radius: 12px;
+  padding: 1.5rem 2rem;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+.cart-summary h3 {
+  color: #220b3e;
+  font-size: 1.3rem;
+  font-weight: 700;
+}
+
+/* ─── Checkout Button ─────────────────────────── */
+.checkout-btn {
+  background-color: #220b3e;
+  color: white;
+  border: none;
+  padding: 0.7rem 1.5rem;
+  border-radius: 25px;
+  font-weight: 600;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.checkout-btn:hover {
+  background-color: #ffb703;
+  color: #220b3e;
+  transform: translateY(-2px);
+}
+
+/* ─── Responsive Design ───────────────────────── */
+@media (max-width: 900px) {
+  .cart-item {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .cart-item img {
+    width: 100%;
+    height: auto;
+  }
+
+  .cart-summary {
+    flex-direction: column;
+    gap: 1rem;
+    text-align: center;
+  }
+
+  .cart-summary h3 {
+    font-size: 1.1rem;
+  }
+}
+
+/* ─── Empty Cart (Centered Message) ─────────────────── */
+.empty-cart {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 70vh; /* Centers vertically */
+  text-align: center;
+  gap: 1.2rem;
+}
+
+.empty-cart p {
+  background-color: #fff;
+  color: #220b3e;
+  font-size: 1.4rem;
+  font-weight: 600;
+  padding: 1rem 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Optional button below message */
+.continue-btn {
+  background-color: #220b3e;
+  color: white;
+  border: none;
+  padding: 0.7rem 1.5rem;
+  border-radius: 25px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.continue-btn:hover {
+  background-color: #ffb703;
+  color: #220b3e;
+  transform: translateY(-2px);
+}
+

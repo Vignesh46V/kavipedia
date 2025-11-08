@@ -1,0 +1,19 @@
+.hero-banner {
+  width: 100%;
+  height: 400px; /* adjust height as needed */
+  overflow: hidden;
+  position: relative;
+}
+
+.hero-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* makes image fill the area beautifully */
+  display: block;
+}
+  
+@media (max-width: 768px) {
+  .hero-banner {
+    height: 250px;
+  }
+}

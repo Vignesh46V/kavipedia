@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&display=swap');
+
+
+.app-background {
+  background-color: #f8f6ff;
+  min-height: 100vh;
+  width: 100%;
+}
+
+.book-section {
+  padding: 2rem 5%;
+  background-color: #f8f6ff;
+}
+
+.genre-section {
+  margin-bottom: 3rem;
+}
+
+.genre-title {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #220b3e;
+  margin-bottom: 1.2rem;
+  border-left: 5px solid #ffb703;
+  padding-left: 10px;
+}
+
+.book-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.8rem; /* controls spacing between cards */
+  justify-content: center;
+}
+
+
+/* ─── Toast Notification ───────────────────────────── */
+.toast {
+  position: fixed;
+  top: -60px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #220b3e;
+  color: #ffb703;
+  padding: 0.8rem 1.5rem;
+  border-radius: 8px;
+  font-weight: 600;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  animation: slideDown 0.4s ease forwards, fadeOut 0.3s ease 1.7s forwards;
+  z-index: 2000;
+}
+
+@keyframes slideDown {
+  to {
+    top: 20px;
+  }
+}
+
+@keyframes fadeOut {
+  to {
+    opacity: 0;
+    top: -60px;
+  }
+}
+
